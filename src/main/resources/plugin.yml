@@ -1,0 +1,4 @@
+name: MobCatcher
+version: '${project.version}'
+main: com.ycjhub.mobcatcher.MobCatcher
+api-version: '1.21'

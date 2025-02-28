@@ -2,3 +2,19 @@ name: MobCatcher
 version: '${project.version}'
 main: com.ycjhub.mobcatcher.MobCatcher
 api-version: '1.21'
+commands:
+  mobcatcher:
+    description: "Gives a custom Mob Catcher Egg"
+    usage: "/mobcatcher"
+    permission: mobcatcher.give
+    permission-message: "§cYou do not have permission to use this command."
+
+permissions:
+  mobcatcher.give:
+    description: "Allows player to use /mobcatcher"
+    default: op
+  mobcatcher.use:
+    description: "Allows player to throw a custom mob catcher egg"
+    default: true
+  mobcatcher.reusable:
+    description: "Allow player to use reusable catcher egg"

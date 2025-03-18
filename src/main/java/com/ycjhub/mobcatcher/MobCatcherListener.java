@@ -125,7 +125,7 @@ public class MobCatcherListener implements Listener {
             }
 
             // 檢查是否為允許轉換的生物
-            Bukkit.getServer().getLogger().info("DEBUG:" + hitEntity.getName());
+            Bukkit.getServer().getLogger().info("DEBUG:" + hitEntity);
             EntityType entityType = hitEntity.getType();
             Material spawnEgg = getSpawnEggMaterial(entityType);
 
@@ -139,6 +139,7 @@ public class MobCatcherListener implements Listener {
 
     private Material getSpawnEggMaterial(EntityType entityType) {
         switch (entityType) {
+            case MOOSHROOM: return Material.MOOSHROOM_SPAWN_EGG;
             case VILLAGER: return Material.VILLAGER_SPAWN_EGG;
             case SHEEP: return Material.SHEEP_SPAWN_EGG;
             case WOLF: return Material.WOLF_SPAWN_EGG;

@@ -51,7 +51,7 @@ public final class MobCatcher extends JavaPlugin {
                     "§7馬、驢、騾、蝙蝠、駱駝、嗅探獸",
                     "§7熾足獸、流浪商人、山羊、山貓",
                     "§7蜜蜂、狐狸、駱馬、北極熊、悅靈",
-                    "§7"
+                    "§7哞菇。"
             );
 
             meta.setLore(lore);
